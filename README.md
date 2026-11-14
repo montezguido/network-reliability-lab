@@ -1,5 +1,7 @@
 # Network Reliability Lab
 
+[![Verify Python code](https://github.com/montezguido/network-reliability-lab/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/montezguido/network-reliability-lab/actions/workflows/test.yml)
+
 **A runnable Python reliability engineering portfolio lab — HTTP/TCP health checks, stateful incident detection, and recovery validation.**
 
 > A self-contained engineering demonstration, not a production monitoring agent. No AWS account, credentials, external destinations, or runtime packages required. This project is separate from private WGU coursework and includes **no WGU solution files**.
@@ -37,7 +39,7 @@ For an entirely network-free demonstration, run `python run.py demo` or `python 
 | Stateful `OPENED` / `RECOVERED` transitions and repeated-failure suppression | [`incidents.py`](src/network_reliability/incidents.py) | `test_incidents.py`, `test_end_to_end.py` |
 | Optional persistent JSON state with atomic replacement | [`state.py`](src/network_reliability/state.py) | `test_state.py`, `test_state_validation.py` |
 | CLI, JSON output and meaningful exit codes | [`cli.py`](src/network_reliability/cli.py) | `test_cli.py`, `test_walkthrough.py` |
-| Automated cross-platform validation | [GitHub Actions workflow](.github/workflows/test.yml) | Check the **Actions** tab after publication |
+| Automated cross-platform validation | [GitHub Actions workflow](.github/workflows/test.yml) | [5/5 CI jobs passed on the initial publication](https://github.com/montezguido/network-reliability-lab/actions/runs/43615889906) |
 
 **Exit codes:** `0` = healthy/success, `1` = unhealthy service or failed walkthrough, `2` = invalid configuration or local fixture startup error.
 
@@ -72,7 +74,7 @@ Stop Terminal A using **Ctrl+C**, repeat the check twice, then start the server 
 
 ## Repository validation and status
 
-Run `python -m compileall -q src tests run.py run_tests.py`, `python run_tests.py`, and `python run.py walkthrough --json`. This repository provides executable tests. **A passing GitHub CI badge will only be added after the workflow actually runs successfully.**
+Run `python -m compileall -q src tests run.py run_tests.py`, `python run_tests.py`, and `python run.py walkthrough --json`. This repository provides executable tests. **GitHub Actions passed all five configured Linux/Windows CI jobs on November 14, 2026** ([verified workflow run](https://github.com/montezguido/network-reliability-lab/actions/runs/43615889906)). The badge above reflects the workflow status on `main`.
 
 The code was developed as a separate portfolio exercise with AI-assisted scaffolding and reviewed through interactive local testing. The maintainer is responsible for understanding, validating, and improving its behavior. This is not a copy of or substitute for restricted WGU assessment solutions.
 
