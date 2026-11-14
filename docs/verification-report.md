@@ -1,4 +1,4 @@
-# Verification report — v0.2 release candidate
+# Verification report — v0.2
 
 **Stage:** Public v0.2 release, published and validated by GitHub Actions on 2026-11-14.
 
