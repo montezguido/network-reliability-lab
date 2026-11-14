@@ -1,0 +1,13 @@
+{
+  "targets": [
+    {
+      "name": "demo_web",
+      "protocol": "http",
+      "host": "127.0.0.1",
+      "port": 8000,
+      "path": "/",
+      "expected_status": 200,
+      "timeout_seconds": 1.0
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "targets": [
+    {
+      "name": "demo_socket",
+      "protocol": "tcp",
+      "host": "127.0.0.1",
+      "port": 8000,
+      "timeout_seconds": 1.0
+    }
+  ]
+}
